@@ -1,13 +1,13 @@
-#Lucianoereu
+# Lucianoereu
 pagina personal proyecto para coderhouse.
 
-##profesor.
+## profesor.
 Rodrigo Zungri.
 
-##tutor.
+## tutor.
 Victor Hernandez.
 
-##comision 22220.
+## comision 22220.
 
 proyec5to final de curso Desarrollo Web aplicando lo aprnedido.
 
