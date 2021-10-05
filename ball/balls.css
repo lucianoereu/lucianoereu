@@ -1,0 +1,211 @@
+:root {
+  --boxColor: #0ff7;
+  --rotateSpeed:30s;
+  --bounceSpeed:3s;
+}
+
+body {
+  background-color: #000f;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 75px;
+  -webkit-perspective: 10em;
+          perspective: 10em;
+  -webkit-perspective-origin: 50% calc(50% - 2em);
+          perspective-origin: 50% calc(50% - 2em);
+}
+
+.scene {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: sceneRotate var(--rotateSpeed) infinite linear;
+          animation: sceneRotate var(--rotateSpeed) infinite linear;
+}
+
+@-webkit-keyframes sceneRotate {
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes sceneRotate {
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+.ball {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: lightpink;
+  position: absolute;
+  left: -.5em;
+  bottom: 1em;
+  background-image: radial-gradient(circle at top, #fff7ff, 70%, #000);
+  animation: ballBounce var(--bounceSpeed) infinite ease-out, sceneRotate var(--rotateSpeed) infinite linear reverse;
+}
+
+@-webkit-keyframes ballBounce {
+  0%, 100% {
+    bottom: 0.5em;
+  }
+  50% {
+    bottom: 3em;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+
+@keyframes ballBounce {
+  0%, 100% {
+    bottom: 0.5em;
+  }
+  50% {
+    bottom: 3em;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+
+.sombra {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#0007, #0000 50%);
+  -webkit-animation: sombra var(--bounceSpeed) infinite;
+          animation: sombra var(--bounceSpeed) infinite;
+}
+
+@-webkit-keyframes sombra {
+  0%, 8%, 90%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: escale(2);
+            transform: escale(2);
+    opacity: 0.5;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes sombra {
+  0%, 8%, 90%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: escale(2);
+            transform: escale(2);
+    opacity: 0.5;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+}
+
+.cubo {
+  width: 2em;
+  height: 2em;
+  background: var(--boxColor);
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  top: -1em;
+  left: -1em;
+  -webkit-animation: cuboH var(--bounceSpeed) infinite linear;
+          animation: cuboH var(--bounceSpeed) infinite linear;
+  /* efecto cubo */
+}
+
+@-webkit-keyframes cuboH {
+  0%, 100% {
+    height: 2em;
+  }
+  6.5%, 90% {
+    height: 2.5em;
+  }
+}
+
+@keyframes cuboH {
+  0%, 100% {
+    height: 2em;
+  }
+  6.5%, 90% {
+    height: 2.5em;
+  }
+}
+
+.cubo .left, .cubo .right, .cubo .front, .cubo .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--boxColor);
+  -webkit-box-shadow: 0 0 0.5em #000a inset;
+          box-shadow: 0 0 0.5em #000a inset;
+}
+
+.cubo .front {
+  -webkit-transform: translateZ(1em);
+          transform: translateZ(1em);
+}
+
+.cubo .right {
+  -webkit-transform: rotateY(90deg) translateZ(1em);
+          transform: rotateY(90deg) translateZ(1em);
+}
+
+.cubo .back {
+  -webkit-transform: rotateY(180deg) translateZ(1em);
+          transform: rotateY(180deg) translateZ(1em);
+}
+
+.cubo .left {
+  -webkit-transform: rotateY(270deg) translatez(1em);
+          transform: rotateY(270deg) translatez(1em);
+}
+
+.cubo .top {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background: var(--boxColor);
+  -webkit-transform: translateY(-50%) rotateX(90deg);
+          transform: translateY(-50%) rotateX(90deg);
+}
+
+.cubo .bottom {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background: #fff7;
+  bottom: 0;
+  -webkit-transform: translateY(50%) rotateX(90deg);
+          transform: translateY(50%) rotateX(90deg);
+  -webkit-box-shadow: 0 0 0.5em #000;
+          box-shadow: 0 0 0.5em #000;
+}
+
+.piso {
+  position: absolute;
+  top: 1em;
+  -webkit-transform: translate(-50%, -50%) rotateX(90deg);
+          transform: translate(-50%, -50%) rotateX(90deg);
+  width: 15em;
+  height: 15em;
+  background-image: radial-gradient(#0000, #000 90%), repeating-conic-gradient(from 45deg, #111 0deg 90deg, #222 90deg 180deg);
+  background-size: 100%, 1em 1em;
+}
+/*# sourceMappingURL=balls.css.map */

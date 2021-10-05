@@ -1,0 +1,43 @@
+/* *************header-************** */
+/* *************************** */
+header {
+    background-color: $primary;
+    display: flex;
+    justify-content: space-around;
+  
+    h1 {
+      font-size: 4vw;
+      font-family: "Rock Salt", cursive;
+      margin-top: 2.5vh;
+      padding-right: 25vh;
+    }
+    $position-values: (
+      0: 0,
+      50: 50%,
+      100: 100%,
+    );
+    nav {
+      ul {
+        a {
+          font-size: 20px;
+          margin: 12px;
+          transition-duration: 2s;;
+        }
+  
+        .lista__link--line {
+          text-decoration: overline;
+        }
+        a:hover {
+          text-decoration: underline;
+          transform: scale(1.1);
+         
+        }
+       
+  
+        .lista__link--line:hover {
+          text-decoration: overline;
+        }
+      }
+    }
+  }
+  

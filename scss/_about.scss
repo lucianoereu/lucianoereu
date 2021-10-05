@@ -1,0 +1,73 @@
+/* *******about me **********/
+/* ************************ */
+.sobreMi {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 5rem;
+    width: 80%;
+  
+    img {
+      width: $tamañoFoto-width;
+     
+      box-shadow: $boxShadow;
+      
+    }
+  
+    .sobreMi__texto {
+      font-size: 20px;
+      background-color: $second;
+      height: 50%;
+
+      align-self: center;
+      text-align: center;
+    }
+    .sobreMi__texto__2 {
+      font-size: 25px;
+      background-color: $primary;
+      
+    }
+  }
+    .container__imagen__img{
+      position: relative;
+      margin: 8rem 5rem;
+      background-color: black;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+    }
+    
+    
+    .container__imagen__img img {
+      width: $tamañoFoto-width;
+      padding-bottom: 10px;
+      box-shadow: $boxShadow;
+      padding-top: 4px;
+      height: auto;
+      display: block;
+    }
+    .container__imagen__texto--overline{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: black;
+    }
+    
+    .container__imagen__img:hover .container__imagen__texto--overline {
+      opacity: 1;
+    }
+    .container__imagen__texto{
+    color: $primary;
+    
+    font-size: 50px;
+    font-family: $tipoLetra1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }

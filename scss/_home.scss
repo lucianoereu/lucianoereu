@@ -1,0 +1,41 @@
+/* **********main home ****************/
+/* ************************* */
+main {
+    .home__contenedorFoto {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 5rem;
+      }
+  
+    .home__contenedorFoto__foto img {
+      width: $tamañoFoto-width;
+      box-shadow: $boxShadow;
+    }
+  
+    .home__contenedorFoto__texto {
+      font-size: 2rem;
+      margin-top: 10rem;
+    }
+  
+    h2 {
+      margin: 10rem 0 ;
+      text-align: center;
+  
+      font-size: 5rem;
+  
+      text-decoration: underline;
+    }
+    .musica__container__listas {
+      justify-content:space-evenly;
+      margin-top: 8rem;
+    }
+  
+    
+    .musica__container__iframe {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 15rem;
+      width: 40rem;
+  
+    }
+  }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- seo -->
+    <meta name="description" content="Portafolio de Luciano Ereu">
+    <meta name="keywords" content="PORTAFOLIO,JACKRUSSELT,MUSICA,PICTURE,PHOTOS,FOTOS,ESTILO DE VIDA,PIZZA">
+    <title>contacto</title>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <!-- estilo de letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+<!-- link Fuentes impresionante -->
+<script src="https://kit.fontawesome.com/0ffde54911.js" crossorigin="anonymous"></script>
+  <!-- link sass -->
+<link rel="stylesheet" href="../css/style.css">
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light header__nav">
+      <div class="container-fluid header__lo">
+        <h1>Luciano Ereu</h1>
+        <button
+          class="navbar-toggler header__boton--tamaño"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 header__menu list">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="aboutme.html">About Me!</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="photos.html">photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pelota.html">Pelota!</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link lista__link--line" href="contacto.html"
+                >Contactame!</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <main class="container-sd formulario row col-lg-12 col-12">
+      <form class="formulario__form " action="enviar.php" method="POST">
+        <fieldset class="formulario__field">
+          <legend class="col-12 col-lg-12 formulario__legend">Dejame tu contacto!</legend>
+          <input
+            type="email"
+            name="mail"
+            id="email"
+            placeholder="dejanos tu email aqui" required
+          />
+
+          <textarea
+            name="mensaje"
+            id="Mensaje"
+            cols="30"
+            rows="10"
+            placeholder="Hola! soy Luciano, dejame tus consultas aca!" required
+          ></textarea>
+
+          <input  class="animate__animated animate__pulse" type="submit" id="envia" value="Enviala!" />
+        </fieldset>
+      </form>
+    </main>
+    <div class="container contacto">
+      <h3 class="contacto__h3">Yo me encuentro en esta ciudad maravillosa!</h3>
+      <iframe class="col-lg-6 col-6"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53598.048924717055!2d-68.84817970000002!3d-32.9013922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1629734389912!5m2!1ses!2sar"
+        width="400"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+    <footer class="footer">
+        <h3>Luciano Ereu</h3>
+        <div class="´footer__redes">
+          <a href="https://www.linkedin.com/in/luciano-ereu/" target="_blank"><i class=" fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/lucianoereu" target="_blank"><i class=" fab fa-github"></i></a>
+          <a href="https://www.instagram.com/luciano_ereu/" target="_blank"><i class=" fab  fa-instagram"></i></a>
+        </div>
+      </footer>
+      <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+</html>

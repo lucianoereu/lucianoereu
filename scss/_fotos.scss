@@ -1,0 +1,38 @@
+/* ******photos****** */
+/* ****************** */
+.subtituloFoto {
+    font-size: 10vh;
+    font-family: "Rock Salt", cursive;
+    text-align: center;
+    margin-top: 2em;
+  }
+  
+  .photos__container--polaroid{
+    height: 40em;
+    margin: 8rem 5rem;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+  }
+  
+  
+  .photo__container img {
+    height: auto;
+    width: $tamañoFoto-width;
+    box-shadow: $boxShadow;
+    padding-top: 4px;
+    transition: width 2s, height 2s, transform 2s;
+  }
+  /* efecto */
+  .photo__container img:hover {
+    width: $tamañoFoto-width;
+    height: auto;
+    transform:scale(1.2,1.2);
+    border-radius: 10px;
+  }
+  .photo__container--estiloP {
+    text-align: center;
+    padding: 25px 20px ;
+    text-decoration:dashed;
+    font-size: 4rem;
+    font-family: $tipoLetra1;
+  }

@@ -1,0 +1,41 @@
+h2{
+    text-align: center;
+    font-family: $tipoLetra1;
+    margin-top: 35px;
+    font-size: 4em;
+}
+
+.animaciones {
+    width: auto;
+padding: 2em;
+background-color: aqua;
+margin: 4em;
+}
+
+.animaciones__pelota{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    
+   object{
+       width: 65%;
+       height: 100%;
+       margin: 25px;
+   }
+}
+.trabajos__texto{
+    font-size: 2em;
+    margin-top: 2em;
+    text-align: center;
+}
+h3 {
+    font-family: $tipoLetra1;
+    font-size: 2em;
+    margin: 1em;
+}
+
+img{
+    width: 85%;
+    height: auto;
+}

@@ -1,0 +1,15 @@
+/* variables */
+$tamañoFoto-width: 100%;
+$primary: #00ffff;
+$second: #bef8f8;
+$boxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$tipoLetra1:"Rock Salt", cursive;
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}

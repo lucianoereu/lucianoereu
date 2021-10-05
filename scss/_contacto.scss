@@ -1,0 +1,72 @@
+
+/* ********formulario de contacto***** */
+/* *********************************** */
+
+.formulario {
+    height: 95vh;
+    margin: auto;
+    margin-bottom: 15vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  
+  
+    &__legend {
+      font-size: 5vh;
+    }
+    &__field {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    &__form {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-top: 5vh;
+    }
+  
+    #email {
+      margin: 1vw;
+      font-size: 1vw;
+      text-align: center;
+      border: 1vh solid $primary;
+      width: 55vh;
+      height: 8vh;
+      box-shadow: 5px 5px 0px grey;
+    }
+  
+    textarea {
+      margin-top: 5rem;
+      text-align: center;
+      font-size: 2vw;
+      box-shadow: 10px 10px 5px grey;
+      background-color: $primary;
+    }
+  }
+  
+  .contacto {
+    display: block;
+    margin-bottom: 6vh;
+    text-align: center;}
+  
+    .contacto__h3 {
+      font-size: 3vw;
+      margin: 2vw;
+      font-size: $tipoLetra1;
+      background-color: $primary;
+    }
+  
+  
+  #envia {
+    color: $primary;
+    background-color: rgb(170, 166, 166);
+    font-size: 2vw;
+    padding: 2vh;
+    margin: 2vw;
+    border-radius: 5vh;
+    border: 1px solid gray;
+  }
+  #envia:hover {
+    animation: bounce 3s;
+  }

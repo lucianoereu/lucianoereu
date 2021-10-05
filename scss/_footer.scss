@@ -1,0 +1,42 @@
+/********* footer****************** */
+/* ***************************** */
+footer {
+    background-color: black;
+    height: auto;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* eliminar */
+    h3 {
+      font-size: 50px;
+      font-family: $tipoLetra1;
+      transition: all 0.5s step-start;
+    }
+    h3:hover {
+      transform: scale(1.2);
+      
+    }
+    div {
+      
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+    a {
+      
+      i {
+       font-size: 25px;
+       margin: 30px 20px ;
+       color: $primary;
+       opacity: 0.3;
+       transition: all 0.1s step-end;
+  
+    }
+    i:hover {
+      transform: scale(1.5);
+      
+    }
+  }
+  }
