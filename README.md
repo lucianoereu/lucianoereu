@@ -1,16 +1,25 @@
-### Hi there 👋
+#Lucianoereu
+pagina personal proyecto para coderhouse.
 
-<!--
-**lucianoereu/lucianoereu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+##profesor.
+Rodrigo Zungri.
 
-Here are some ideas to get you started:
+##tutor.
+Victor Hernandez.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+##comision 22220.
+
+proyec5to final de curso Desarrollo Web aplicando lo aprnedido.
+
+1.Html5
+
+2.Css
+
+3.Bootstrap
+
+4.Scss
+
+5.SEO
+
+6.GIT
+
